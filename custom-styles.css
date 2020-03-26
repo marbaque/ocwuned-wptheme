@@ -1,0 +1,14 @@
+/*
+// Agregue aqui los estilos css... NO edite style.css directamente
+// pues ese es actualizado automaticamente a partir de style.scss
+*/
+
+
+
+#3d-contenedor {
+	display: block;
+	background: #FFF;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}

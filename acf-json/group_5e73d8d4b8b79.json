@@ -1,0 +1,47 @@
+{
+    "key": "group_5e73d8d4b8b79",
+    "title": "Video",
+    "fields": [
+        {
+            "key": "field_5e73d8e0ddd32",
+            "label": "Enlace de video",
+            "name": "enlace_video",
+            "type": "oembed",
+            "instructions": "Añada un enlace del video de su proveedor favorito (YouTube, Vimeo, entre otros).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "recurso"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "recurso_category:video-educativo"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "categories"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1584653581
+}

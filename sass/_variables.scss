@@ -1,0 +1,51 @@
+$color__body-text: #4A4A4A;
+$color__primario: #FA9046;
+$color__secundario: #F9E9C9;
+$color__grisillo: #ddd;
+$color__amarillo: #F6E871;
+$color__verdeazul: #51F0FA;
+$color__azul: #176AC7;
+$color__sutil: #f4f4f4;
+$color__moradito: #98B1D5;
+
+$color__sutil: #f9f9f9;
+
+$color__dark: #2B2E35;
+$color__text-overdark: #CDD8E8;
+
+$break__small: 500px;
+$break__medium: 768px;
+$break__large: 1200px;
+
+
+
+//mixins
+@mixin hyphen {
+	 -ms-word-break: break-all;
+     word-break: break-all;
+
+     // Non standard for webkit
+     word-break: break-word;
+
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+	        hyphens: auto;
+}
+
+@mixin radio($r) {
+	-webkit-border-radius: $r;
+	-moz-border-radius: $r;
+	border-radius: $r;
+	/* Prevent background color leak outs */
+    -webkit-background-clip: padding-box;
+    -moz-background-clip:    padding;
+    background-clip:         padding-box;
+}
+
+
+$public_path: "";
+
+@mixin vector-bg-with-fallback($name) {
+  background-image: url('#{$public_path}img/#{$name}.png');
+  background-image: none, url('#{$public_path}img/#{$name}.svg');
+}

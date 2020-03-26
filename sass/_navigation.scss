@@ -1,0 +1,54 @@
+.main-navigation {
+	background-color: $color__moradito;
+
+	.main-nav {
+		//background-color: #f4f4f4;
+		ul {
+			li {
+				a {
+					color: #fff;
+
+					&:hover {
+						background-color: $color__primario;
+						opacity: 1;
+					}
+				}
+			}
+
+			li[class*="current-menu-"] > a,
+			li[class*="current-menu-"] > a:hover,
+			li[class*="current-menu-"].sfHover > a {
+				background-color: $color__primario;
+			}
+
+			li:hover > a,
+			li:focus > a,
+			li.sfHover > a {
+				background-color: $color__primario;
+			}
+
+			ul {
+				background-color: $color__moradito;
+
+				li[class*="current-menu-"] > a:hover,
+				li[class*="current-menu-"].sfHover > a,
+				li:focus > a,
+				li.sfHover > a,
+				li:hover > a {
+					background-color: $color__primario;
+					opacity: .8;
+				}
+
+				li[class*="current-menu-"] > a {
+					background-color: $color__azul;
+					opacity: .5;
+				}
+			}
+		}
+	}
+}
+
+
+button.menu-toggle:hover, button.menu-toggle:focus, .main-navigation .mobile-bar-items a, .main-navigation .mobile-bar-items a:hover, .main-navigation .mobile-bar-items a:focus {
+	color: $color__body-text;
+}
